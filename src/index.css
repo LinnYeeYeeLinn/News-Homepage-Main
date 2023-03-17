@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+.menu{
+    display: none;
+}
+@media screen and (max-width: 650px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: hsl(36, 100%, 99%);
+        width: 200px;
+        padding: 6rem 1rem;
+        height: 100vh;
+        transform: translateX(100%);
+    }
+    .menu-toggle{
+        transform: translateX(0%);
+    }
+    .menu{
+        display: block;
+    }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
